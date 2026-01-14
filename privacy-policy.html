@@ -404,6 +404,14 @@
                     // Check if element has child elements with data attributes
                     const hasDataChildren = element.querySelector('span[data-ar], span[data-en], strong[data-ar], strong[data-en]');
                     
+                    // Check if element contains links (anchor tags) - save them before updating
+                    const existingLinks = element.querySelectorAll('a');
+                    const linksArray = existingLinks.length > 0 ? Array.from(existingLinks).map(link => ({
+                        href: link.getAttribute('href'),
+                        target: link.getAttribute('target'),
+                        text: link.textContent
+                    })) : [];
+                    
                     if (hasDataChildren) {
                         // Don't replace the whole content, children are already updated
                         // Just update any direct text nodes if needed
@@ -416,8 +424,24 @@
                             }
                         }
                     } else {
-                        // Simple text replacement for elements without data-attribute children
-                        element.textContent = text;
+                        // If element contains links, preserve them
+                        if (linksArray.length > 0) {
+                            // Build new HTML with text and preserved links
+                            let newHTML = text;
+                            
+                            // Add links after the text with "و" between them
+                            newHTML += ' ';
+                            linksArray.forEach((link, index) => {
+                                if (index > 0) {
+                                    newHTML += ' و ';
+                                }
+                                newHTML += `<a href="${link.href}"${link.target ? ` target="${link.target}"` : ''}>${link.text}</a>`;
+                            });
+                            element.innerHTML = newHTML;
+                        } else {
+                            // Simple text replacement for elements without links
+                            element.textContent = text;
+                        }
                     }
                 }
             });
