@@ -3,487 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="سياسة الخصوصية - دليل شنكال | Privacy Policy - Sengal Guide">
-    <title>سياسة الخصوصية - دليل شنكال | Privacy Policy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
-            min-height: 100vh;
-        }
-        
-        body[dir="ltr"] {
-            direction: ltr;
-        }
-        
-        body[dir="rtl"] {
-            direction: rtl;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-            color: white;
-            padding: 30px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .lang-switcher {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            right: 20px;
-            text-align: left;
-        }
-        
-        body[dir="rtl"] .lang-switcher {
-            text-align: right;
-        }
-        
-        .lang-btn {
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            margin-left: 10px;
-        }
-        
-        body[dir="rtl"] .lang-btn {
-            margin-left: 0;
-            margin-right: 10px;
-        }
-        
-        .lang-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-        
-        .lang-btn.active {
-            background: white;
-            color: #1976D2;
-            border-color: white;
-        }
-        
-        .header h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-        
-        .header p {
-            opacity: 0.9;
-            font-size: 16px;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        .content h2 {
-            color: #1976D2;
-            font-size: 22px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e0e0e0;
-        }
-        
-        .content h2:first-child {
-            margin-top: 0;
-        }
-        
-        .content h3 {
-            color: #1976D2;
-            font-size: 18px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        
-        .content p {
-            margin-bottom: 15px;
-            text-align: justify;
-            font-size: 16px;
-        }
-        
-        .content ul {
-            margin: 15px 0;
-            padding-right: 30px;
-        }
-        
-        body[dir="ltr"] .content ul {
-            padding-right: 0;
-            padding-left: 30px;
-        }
-        
-        .content li {
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-        
-        .content a {
-            color: #2196F3;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .content a:hover {
-            text-decoration: underline;
-        }
-        
-        .divider {
-            height: 2px;
-            background: linear-gradient(to left, transparent, #e0e0e0, transparent);
-            margin: 30px 0;
-        }
-        
-        body[dir="ltr"] .divider {
-            background: linear-gradient(to right, transparent, #e0e0e0, transparent);
-        }
-        
-        .footer {
-            background: #f5f5f5;
-            padding: 20px;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-        }
-        
-        .last-updated {
-            background: #e3f2fd;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-right: 4px solid #2196F3;
-        }
-        
-        body[dir="ltr"] .last-updated {
-            border-right: none;
-            border-left: 4px solid #2196F3;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            .header h1 {
-                font-size: 24px;
-            }
-            
-            .content h2 {
-                font-size: 20px;
-            }
-            
-            .content p,
-            .content li {
-                font-size: 15px;
-            }
-            
-            .lang-switcher {
-                position: static;
-                text-align: center;
-                margin-bottom: 15px;
-            }
-            
-            .lang-btn {
-                display: inline-block;
-                margin: 5px;
-            }
-        }
-    </style>
+    <title>سياسة الخصوصية - دليل شنكال</title>
 </head>
-<body dir="rtl">
-    <div class="container">
-        <div class="header">
-            <div class="lang-switcher">
-                <button class="lang-btn active" onclick="switchLanguage('ar')" data-lang="ar">العربية</button>
-                <button class="lang-btn" onclick="switchLanguage('en')" data-lang="en">English</button>
-            </div>
-            <h1 data-ar="🔒 سياسة الخصوصية" data-en="🔒 Privacy Policy">🔒 سياسة الخصوصية</h1>
-            <p data-ar="دليل شنكال" data-en="Sengal Guide">دليل شنكال</p>
-        </div>
-        
-        <div class="content">
-            <div class="last-updated">
-                <strong data-ar="تاريخ آخر تحديث:" data-en="Last Updated:">تاريخ آخر تحديث:</strong> <span>14 فبراير 2026</span>
-            </div>
-            
-            <p data-ar="في دليل شنكال، نولي خصوصيتك وحماية بياناتك أهمية قصوى. هذه السياسة توضح بوضوح ما نجمع وما لا نجمع من بيانات، وكيف نستخدم ونحمي معلوماتك عند استخدام التطبيق." data-en="At Sengal Guide, we take your privacy and data protection very seriously. This policy clearly explains what data we collect and what we do not collect, and how we use and protect your information when using the application.">
-                في دليل شنكال، نولي خصوصيتك وحماية بياناتك أهمية قصوى. هذه السياسة توضح بوضوح ما نجمع وما لا نجمع من بيانات، وكيف نستخدم ونحمي معلوماتك عند استخدام التطبيق.
-            </p>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="1. نظرة عامة" data-en="1. Overview">1. نظرة عامة</h2>
-            <p data-ar="دليل شنكال هو تطبيق مجاني وشامل يعرض معلومات عن الأطباء والمستشفيات والصيدليات والمختبرات والخدمات المحلية (مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب) في منطقة شنكال بالعراق. يعتمد التطبيق على بيانات من خوادمنا، مع تخزين جزء منها محلياً لتحسين السرعة والعمل في وضع عدم الاتصال. لا يتطلب التطبيق إنشاء حساب أو تسجيل دخول." data-en="Sengal Guide is a free comprehensive application that displays information about doctors, hospitals, pharmacies, laboratories, and local services (cafes, restaurants, salons, car services, factories, malls, general services and offices) in the Sinjar region of Iraq. The app relies on data from our servers, with some data stored locally to improve speed and offline functionality. The app does not require account creation or login.">
-                دليل شنكال هو تطبيق مجاني وشامل يعرض معلومات عن الأطباء والمستشفيات والصيدليات والمختبرات والخدمات المحلية (مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب) في منطقة شنكال بالعراق. يعتمد التطبيق على بيانات من خوادمنا، مع تخزين جزء منها محلياً لتحسين السرعة والعمل في وضع عدم الاتصال. لا يتطلب التطبيق إنشاء حساب أو تسجيل دخول.
-            </p>
-            
-            <div class="last-updated" style="margin-top: 20px; border-color: #ff9800; background: #fff8e1;">
-            <h3 data-ar="إخلاء مسؤولية — معلومات صحية وطبية" data-en="Disclaimer — Health and Medical Information" style="margin-top: 0; color: #e65100;">إخلاء مسؤولية — معلومات صحية وطبية</h3>
-            <p data-ar="هذا التطبيق هو دليل معلوماتي عام فقط وليس جهازاً طبياً ولا يقدم استشارات أو تشخيصات أو علاجات طبية. المعلومات المعروضة عن الأطباء والمستشفيات والصيدليات والمختبرات هي لأغراض الإرشاد والمرجع فقط، ولا تُعد بديلاً عن استشارة مقدم رعاية صحية مرخّص. التطبيق يُنشر من قبل مطوّر فردي وليس من قبل جهة طبية أو شركة رعاية صحية. يُنصح المستخدمون بالتحقق من المعلومات والاتصال المباشر بمقدمي الخدمات الصحية عند الحاجة." data-en="This app is a general informational directory only and is not a medical device. It does not provide medical advice, diagnoses, or treatments. Information displayed about doctors, hospitals, pharmacies, and laboratories is for reference and guidance purposes only, and is not a substitute for consulting a licensed healthcare provider. The app is published by an individual developer and not by a medical entity or healthcare company. Users are advised to verify information and contact healthcare providers directly when needed.">
-                هذا التطبيق هو دليل معلوماتي عام فقط وليس جهازاً طبياً ولا يقدم استشارات أو تشخيصات أو علاجات طبية. المعلومات المعروضة عن الأطباء والمستشفيات والصيدليات والمختبرات هي لأغراض الإرشاد والمرجع فقط، ولا تُعد بديلاً عن استشارة مقدم رعاية صحية مرخّص. التطبيق يُنشر من قبل مطوّر فردي وليس من قبل جهة طبية أو شركة رعاية صحية. يُنصح المستخدمون بالتحقق من المعلومات والاتصال المباشر بمقدمي الخدمات الصحية عند الحاجة.
-            </p>
-            </div>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="2. ما لا نجمع (بيانات لا نجمعها أبداً)" data-en="2. Data We Do NOT Collect">2. ما لا نجمع (بيانات لا نجمعها أبداً)</h2>
-            <p data-ar="لتوضيح التزامنا بالشفافية، نؤكد أننا لا نجمع:" data-en="To clarify our commitment to transparency, we confirm that we do NOT collect:">لتوضيح التزامنا بالشفافية، نؤكد أننا لا نجمع:</p>
-            <ul>
-                <li data-ar="بيانات الحساب أو تسجيل الدخول — التطبيق لا يتطلب إنشاء حساب." data-en="Account or login data — the app does not require account creation.">بيانات الحساب أو تسجيل الدخول — التطبيق لا يتطلب إنشاء حساب.</li>
-                <li data-ar="الموقع الجغرافي للمستخدم — لا نحدد أو نخزن موقعك الفعلي." data-en="User's geographic location — we do not determine or store your actual location.">الموقع الجغرافي للمستخدم — لا نحدد أو نخزن موقعك الفعلي.</li>
-                <li data-ar="معرف الإعلانات (AD_ID) — معطل صراحةً في التطبيق، ولا نستخدم إعلانات." data-en="Advertising ID (AD_ID) — explicitly disabled in the app; we do not use advertising.">معرف الإعلانات (AD_ID) — معطل صراحةً في التطبيق، ولا نستخدم إعلانات.</li>
-                <li data-ar="بيانات للبيع — لا نبيع بياناتك لأي طرف ثالث." data-en="Data for sale — we do not sell your data to any third party.">بيانات للبيع — لا نبيع بياناتك لأي طرف ثالث.</li>
-                <li data-ar="إعلانات موجهة — التطبيق خالٍ من الإعلانات." data-en="Targeted advertising — the app is ad-free.">إعلانات موجهة — التطبيق خالٍ من الإعلانات.</li>
-            </ul>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="3. الأذونات الفعلية التي يستخدمها التطبيق" data-en="3. Actual Permissions Used by the Application">3. الأذونات الفعلية التي يستخدمها التطبيق</h2>
-            <p data-ar="يستخدم التطبيق الأذونات التالية فقط لتقديم خدماته:" data-en="The application uses only the following permissions to provide its services:">يستخدم التطبيق الأذونات التالية فقط لتقديم خدماته:</p>
-            <ul>
-                <li><strong data-ar="الإنترنت:" data-en="Internet:">الإنترنت:</strong> <span data-ar="للاتصال بالخادم وجلب وتحديث البيانات." data-en="To connect to the server and fetch/update data.">للاتصال بالخادم وجلب وتحديث البيانات.</span></li>
-                <li><strong data-ar="حالة الشبكة:" data-en="Network Status:">حالة الشبكة:</strong> <span data-ar="للتحقق من توفر اتصال بالإنترنت والتعامل مع وضع عدم الاتصال." data-en="To check internet connectivity and handle offline mode.">للتحقق من توفر اتصال بالإنترنت والتعامل مع وضع عدم الاتصال.</span></li>
-                <li><strong data-ar="الإشعارات:" data-en="Notifications:">الإشعارات:</strong> <span data-ar="لاستقبال إشعارات من Firebase وعرضها عبر نظام جهازك، وتشمل: أطباء جدد، مستشفيات، صيدليات، مختبرات، منشورات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، أقسام عامة، وميزات جديدة — ويمكنك تخصيص أنواع الإشعارات من إعدادات التطبيق." data-en="To receive notifications from Firebase and display them through your device's system, including: new doctors, hospitals, pharmacies, laboratories, posts, cafes, restaurants, salons, car services, factories, malls, general services and offices, general sections, and new features — you can customize notification types in app settings.">لاستقبال إشعارات من Firebase وعرضها عبر نظام جهازك، وتشمل: أطباء جدد، مستشفيات، صيدليات، مختبرات، منشورات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، أقسام عامة، وميزات جديدة — ويمكنك تخصيص أنواع الإشعارات من إعدادات التطبيق.</span></li>
-                <li><strong data-ar="الاتصال الهاتفي:" data-en="Phone Call:">الاتصال الهاتفي:</strong> <span data-ar="للسماح بالاتصال المباشر بجميع الخدمات المعروضة (أطباء، مستشفيات، صيدليات، مختبرات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب) من خلال أرقامهم المعروضة." data-en="To allow direct calls to all displayed services (doctors, hospitals, pharmacies, laboratories, cafes, restaurants, salons, car services, factories, malls, general services and offices) through their displayed phone numbers.">للسماح بالاتصال المباشر بجميع الخدمات المعروضة (أطباء، مستشفيات، صيدليات، مختبرات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب) من خلال أرقامهم المعروضة.</span></li>
-                <li><strong data-ar="الاهتزاز:" data-en="Vibrate:">الاهتزاز:</strong> <span data-ar="لتنبيهات الإشعارات (يمكن تعطيله من إعدادات التطبيق)." data-en="For notification alerts (can be disabled in app settings).">لتنبيهات الإشعارات (يمكن تعطيله من إعدادات التطبيق).</span></li>
-                <li><strong data-ar="الموقع (اختياري):" data-en="Location (optional):">الموقع (اختياري):</strong> <span data-ar="مُعلن في التطبيق لاحتمال استخدامه في وظائف الخريطة المستقبلية. نحن حالياً لا نجمع ولا نخزن موقعك الجغرافي." data-en="Declared in the app for potential future map features. We currently do not collect or store your geographic location.">مُعلن في التطبيق لاحتمال استخدامه في وظائف الخريطة المستقبلية. نحن حالياً لا نجمع ولا نخزن موقعك الجغرافي.</span></li>
-            </ul>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="4. البيانات التي يتم جمعها" data-en="4. Data Collected">4. البيانات التي يتم جمعها</h2>
-            
-            <h3 data-ar="أ) البيانات المجمعة تلقائياً (عبر Firebase والخدمات التقنية):" data-en="a) Automatically Collected Data (via Firebase and Technical Services):">أ) البيانات المجمعة تلقائياً (عبر Firebase والخدمات التقنية):</h3>
-            <ul>
-                <li data-ar="معلومات الجهاز العامة (مثل نوع الجهاز، إصدار نظام التشغيل، لغة الجهاز الافتراضية، حالة الاتصال بالشبكة) لأغراض تقنية وتحليلات عامة." data-en="General device information (such as device type, operating system version, default device language, network connection status) for technical purposes and general analytics.">معلومات الجهاز العامة (مثل نوع الجهاز، إصدار نظام التشغيل، لغة الجهاز الافتراضية، حالة الاتصال بالشبكة) لأغراض تقنية وتحليلات عامة.</li>
-                <li data-ar="بيانات استخدام التطبيق (الشاشات التي تزورها — أطباء، مستشفيات، صيدليات، مختبرات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، خريطة تفاعلية، منشورات — عناصر البحث، الإعدادات مثل اللغة والوضع فاتح/داكن)، وذلك بشكل مجهول لتحسين تجربة الاستخدام." data-en="Application usage data (screens you visit — doctors, hospitals, pharmacies, laboratories, cafes, restaurants, salons, car services, factories, malls, general services and offices, interactive map, posts — search terms, settings such as language and light/dark mode), anonymously to improve user experience.">بيانات استخدام التطبيق (الشاشات التي تزورها — أطباء، مستشفيات، صيدليات، مختبرات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، خريطة تفاعلية، منشورات — عناصر البحث، الإعدادات مثل اللغة والوضع فاتح/داكن)، وذلك بشكل مجهول لتحسين تجربة الاستخدام.</li>
-                <li data-ar="تقارير الأخطاء والأعطال (Crashlytics) متضمنة معلومات تقنية عن الخطأ وحالة التطبيق لحظة حدوثه، دون استهداف هويتك الشخصية." data-en="Error and crash reports (Crashlytics) including technical information about the error and application state at the time of occurrence, without targeting your personal identity.">تقارير الأخطاء والأعطال (Crashlytics) متضمنة معلومات تقنية عن الخطأ وحالة التطبيق لحظة حدوثه، دون استهداف هويتك الشخصية.</li>
-                <li data-ar="رمز الإشعارات (FCM Token) الذي يتيح إرسال الإشعارات إلى جهازك، ويُعامل كمعرّف تقني للجهاز فقط." data-en="Notification token (FCM Token) that enables sending notifications to your device, treated only as a technical device identifier.">رمز الإشعارات (FCM Token) الذي يتيح إرسال الإشعارات إلى جهازك، ويُعامل كمعرّف تقني للجهاز فقط.</li>
-            </ul>
-            
-            <h3 data-ar="ب) البيانات المحفوظة محلياً على جهازك:" data-en="b) Data Stored Locally on Your Device:">ب) البيانات المحفوظة محلياً على جهازك:</h3>
-            <ul>
-                <li><strong data-ar="بيانات الكاش:" data-en="Cache Data:">بيانات الكاش:</strong> <span data-ar="قوائم الأطباء والمستشفيات والصيدليات والمختبرات والخدمات العامة (مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات)، بيانات الصفحة الرئيسية، التصنيفات والمدن. تُستخدم لتسريع تحميل الصفحات والعمل عند ضعف أو انقطاع الإنترنت، ويتم تحديثها دورياً." data-en="Lists of doctors, hospitals, pharmacies, laboratories, and public services (cafes, restaurants, salons, car services, factories, malls), homepage data, categories and cities. Used to speed up page loading and work when internet is weak or disconnected, and are updated periodically.">قوائم الأطباء والمستشفيات والصيدليات والمختبرات والخدمات العامة (مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات)، بيانات الصفحة الرئيسية، التصنيفات والمدن. تُستخدم لتسريع تحميل الصفحات والعمل عند ضعف أو انقطاع الإنترنت، ويتم تحديثها دورياً.</span></li>
-                <li><strong data-ar="إعدادات المستخدم:" data-en="User Settings:">إعدادات المستخدم:</strong> <span data-ar="اللغة المختارة (العربية، الإنجليزية)، تفضيلات المظهر (فاتح/داكن)، إعدادات الإشعارات وأنواعها (يمكن تخصيص كل نوع: أطباء، مستشفيات، صيدليات، مختبرات، منشورات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، أقسام عامة، ميزات جديدة)، قائمة المفضلة (أطباء وخدمات أخرى)، وقت الهدوء، وبعض الإحصائيات المحلية." data-en="Selected language (Arabic, English), appearance preferences (light/dark), notification settings and types (each customizable: doctors, hospitals, pharmacies, laboratories, posts, cafes, restaurants, salons, car services, factories, malls, general services and offices, general sections, new features), favorites list (doctors and other services), quiet time, and some local statistics.">اللغة المختارة (العربية، الإنجليزية)، تفضيلات المظهر (فاتح/داكن)، إعدادات الإشعارات وأنواعها (يمكن تخصيص كل نوع: أطباء، مستشفيات، صيدليات، مختبرات، منشورات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، أقسام عامة، ميزات جديدة)، قائمة المفضلة (أطباء وخدمات أخرى)، وقت الهدوء، وبعض الإحصائيات المحلية.</span></li>
-            </ul>
-            
-            <h3 data-ar="ج) البيانات المرسلة إلى خوادمنا (PHP):" data-en="c) Data Sent to Our Servers (PHP):">ج) البيانات المرسلة إلى خوادمنا (PHP):</h3>
-            <ul>
-                <li><strong data-ar="إحصائيات اللغة:" data-en="Language Statistics:">إحصائيات اللغة:</strong> <span data-ar="عند تغيير لغة التطبيق، نرسل كود اللغة المختارة فقط (ar, en) بدون أي معلومات شخصية." data-en="When changing the application language, we send only the selected language code (ar, en) without any personal information.">عند تغيير لغة التطبيق، نرسل كود اللغة المختارة فقط (ar, en) بدون أي معلومات شخصية.</span></li>
-                <li><strong data-ar="عمليات البحث:" data-en="Search Operations:">عمليات البحث:</strong> <span data-ar="كلمات البحث التي تدخلها في البحث العام (أطباء، مستشفيات، صيدليات، مختبرات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب) لتحسين نتائج البحث وجودة البيانات. لا يتم ربطها بهويتك الشخصية." data-en="Search terms you enter in the global search (doctors, hospitals, pharmacies, laboratories, cafes, restaurants, salons, car services, factories, malls, general services and offices) to improve search results and data quality. They are not linked to your personal identity.">كلمات البحث التي تدخلها في البحث العام (أطباء، مستشفيات، صيدليات، مختبرات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب) لتحسين نتائج البحث وجودة البيانات. لا يتم ربطها بهويتك الشخصية.</span></li>
-                <li><strong data-ar="النماذج والتطبيقات:" data-en="Forms and Applications:">النماذج والتطبيقات:</strong> <span data-ar="عند إرسالها طوعياً (طلب إضافة طبيب أو صيدلية أو مختبر أو أي خدمة أخرى، نماذج الشكاوى والاقتراحات، التواصل معنا). تحتوي على البيانات التي تكتبها بنفسك (مثل الاسم، المدينة، رقم الهاتف، البريد الإلكتروني)." data-en="When voluntarily submitted (request to add a doctor, pharmacy, laboratory, or any other service, complaint and suggestion forms, contact us). Contains data you enter yourself (such as name, city, phone number, email).">عند إرسالها طوعياً (طلب إضافة طبيب أو صيدلية أو مختبر أو أي خدمة أخرى، نماذج الشكاوى والاقتراحات، التواصل معنا). تحتوي على البيانات التي تكتبها بنفسك (مثل الاسم، المدينة، رقم الهاتف، البريد الإلكتروني).</span></li>
-            </ul>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="5. استخدام خدمات الطرف الثالث" data-en="5. Use of Third-Party Services">5. استخدام خدمات الطرف الثالث</h2>
-            <p data-ar="نستخدم خدمات Google Firebase لتحليلات الاستخدام، تتبع الأعطال، وإرسال الإشعارات:" data-en="We use Google Firebase services for usage analytics, crash tracking, and sending notifications:">نستخدم خدمات Google Firebase لتحليلات الاستخدام، تتبع الأعطال، وإرسال الإشعارات:</p>
-            <ul>
-                <li><strong>Firebase Analytics:</strong> <span data-ar="لتجميع إحصاءات استخدام مجهولة تساعدنا على فهم كيفية استخدام التطبيق وتحسينه." data-en="To collect anonymous usage statistics that help us understand how the application is used and improve it.">لتجميع إحصاءات استخدام مجهولة تساعدنا على فهم كيفية استخدام التطبيق وتحسينه.</span></li>
-                <li><strong>Firebase Crashlytics:</strong> <span data-ar="لتجميع تقارير الأعطال والأخطاء التقنية بهدف إصلاحها وتحسين استقرار التطبيق." data-en="To collect crash and technical error reports to fix them and improve application stability.">لتجميع تقارير الأعطال والأخطاء التقنية بهدف إصلاحها وتحسين استقرار التطبيق.</span></li>
-                <li><strong>Firebase Cloud Messaging (FCM):</strong> <span data-ar="لاستقبال إشعارات التحديثات على جهازك (أطباء، مستشفيات، صيدليات، مختبرات، منشورات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، أقسام عامة، ميزات جديدة)." data-en="To receive update notifications on your device (doctors, hospitals, pharmacies, laboratories, posts, cafes, restaurants, salons, car services, factories, malls, general services and offices, general sections, new features).">لاستقبال إشعارات التحديثات على جهازك (أطباء، مستشفيات، صيدليات، مختبرات، منشورات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، أقسام عامة، ميزات جديدة).</span></li>
-            </ul>
-            <p data-ar="تخضع خدمات Google Firebase لسياسات الخصوصية الخاصة بها:" data-en="Google Firebase services are subject to their respective privacy policies:">
-                تخضع خدمات Google Firebase لسياسات الخصوصية الخاصة بها:
-                <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
-                و
-                <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a>
-            </p>
-            <h3 data-ar="OpenStreetMap:" data-en="OpenStreetMap:">OpenStreetMap:</h3>
-            <p data-ar="نستخدم خرائط OpenStreetMap لعرض جميع المواقع على الخريطة التفاعلية (أطباء، مستشفيات، صيدليات، مختبرات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب). يتم تحميل بلاطات الخريطة مباشرة من خوادم OpenStreetMap. " data-en="We use OpenStreetMap to display all locations on the interactive map (doctors, hospitals, pharmacies, laboratories, cafes, restaurants, salons, car services, factories, malls, general services and offices). Map tiles are loaded directly from OpenStreetMap servers. ">
-                نستخدم خرائط OpenStreetMap لعرض جميع المواقع على الخريطة التفاعلية (أطباء، مستشفيات، صيدليات، مختبرات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب). يتم تحميل بلاطات الخريطة مباشرة من خوادم OpenStreetMap.
-                <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OpenStreetMap Foundation Privacy Policy</a>
-            </p>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="6. كيفية استخدام البيانات" data-en="6. How Data is Used">6. كيفية استخدام البيانات</h2>
-            <p data-ar="نستخدم البيانات المجمعة للأغراض التالية فقط:" data-en="We use the collected data only for the following purposes:">نستخدم البيانات المجمعة للأغراض التالية فقط:</p>
-            <ul>
-                <li data-ar="تحسين جودة الخدمة وتجربة المستخدم." data-en="Improving service quality and user experience.">تحسين جودة الخدمة وتجربة المستخدم.</li>
-                <li data-ar="إصلاح الأخطاء وتحسين استقرار التطبيق." data-en="Fixing errors and improving application stability.">إصلاح الأخطاء وتحسين استقرار التطبيق.</li>
-                <li data-ar="إرسال إشعارات مهمة حول التحديثات (أطباء جدد، مستشفيات، صيدليات، مختبرات، منشورات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، أقسام عامة، ميزات جديدة) — في حال تفعيل الإشعارات وتخصيص أنواعها من إعدادات التطبيق." data-en="Sending important notifications about updates (new doctors, hospitals, pharmacies, laboratories, posts, cafes, restaurants, salons, car services, factories, malls, general services and offices, general sections, new features) — if notifications are enabled and types customized in app settings.">إرسال إشعارات مهمة حول التحديثات (أطباء جدد، مستشفيات، صيدليات، مختبرات، منشورات، مقاهي، مطاعم، صالونات، خدمات سيارات، مصانع، مولات، خدمات عامة ومكاتب، أقسام عامة، ميزات جديدة) — في حال تفعيل الإشعارات وتخصيص أنواعها من إعدادات التطبيق.</li>
-                <li data-ar="إعداد إحصائيات عامة عن استخدام اللغات وميزات التطبيق دون ربطها بأشخاص محددين." data-en="Creating general statistics about language usage and application features without linking them to specific individuals.">إعداد إحصائيات عامة عن استخدام اللغات وميزات التطبيق دون ربطها بأشخاص محددين.</li>
-                <li data-ar="تحسين نتائج البحث وأداء التطبيق وسرعة التحميل." data-en="Improving search results, application performance, and loading speed.">تحسين نتائج البحث وأداء التطبيق وسرعة التحميل.</li>
-            </ul>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="7. حماية البيانات" data-en="7. Data Protection">7. حماية البيانات</h2>
-            <ul>
-                <li data-ar="نستخدم اتصالاً آمناً (HTTPS/SSL) عند التواصل مع خوادمنا." data-en="We use a secure connection (HTTPS/SSL) when communicating with our servers.">نستخدم اتصالاً آمناً (HTTPS/SSL) عند التواصل مع خوادمنا.</li>
-                <li data-ar="يتم تخزين البيانات المحلية داخل مساحة التطبيق فقط، ويمكنك حذفها من إعدادات الجهاز." data-en="Local data is stored only within the application space, and you can delete it from device settings.">يتم تخزين البيانات المحلية داخل مساحة التطبيق فقط، ويمكنك حذفها من إعدادات الجهاز.</li>
-                <li data-ar="لا نبيع بياناتك ولا نستخدمها لأغراض إعلانية أو تسويقية موجهة." data-en="We do not sell your data or use it for advertising or targeted marketing purposes.">لا نبيع بياناتك ولا نستخدمها لأغراض إعلانية أو تسويقية موجهة.</li>
-                <li data-ar="الوصول إلى البيانات التقنية على الخوادم مقصور على فريق التطوير المسؤول." data-en="Access to technical data on servers is limited to the responsible development team.">الوصول إلى البيانات التقنية على الخوادم مقصور على فريق التطوير المسؤول.</li>
-            </ul>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="8. حقوقك" data-en="8. Your Rights">8. حقوقك</h2>
-            <ul>
-                <li data-ar="يمكنك إيقاف الإشعارات من إعدادات التطبيق أو من إعدادات النظام في جهازك." data-en="You can disable notifications from the application settings or from your device's system settings.">يمكنك إيقاف الإشعارات من إعدادات التطبيق أو من إعدادات النظام في جهازك.</li>
-                <li data-ar="يمكنك حذف بيانات التطبيق بالكامل من إعدادات النظام (مسح البيانات/إلغاء تثبيت التطبيق)، أو مسح الكاش من داخل التطبيق إن توفرت هذه الخيارات." data-en="You can completely delete application data from system settings (clear data/uninstall the application), or clear cache from within the application if these options are available.">يمكنك حذف بيانات التطبيق بالكامل من إعدادات النظام (مسح البيانات/إلغاء تثبيت التطبيق)، أو مسح الكاش من داخل التطبيق إن توفرت هذه الخيارات.</li>
-                <li data-ar="يمكنك مراجعة سياسات الخصوصية الخاصة بـ Google و Firebase من الروابط:" data-en="You can review the privacy policies of Google and Firebase at:">
-                    يمكنك مراجعة سياسات الخصوصية الخاصة بـ Google و Firebase من الروابط:
-                    <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
-                    و
-                    <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a>
-                </li>
-                <li data-ar="يمكنك التواصل معنا في أي وقت بخصوص أي استفسار عن الخصوصية." data-en="You can contact us at any time regarding any privacy inquiries.">يمكنك التواصل معنا في أي وقت بخصوص أي استفسار عن الخصوصية.</li>
-                <li data-ar="يمكنك طلب حذف بياناتك عبر صفحة طلب حذف البيانات:" data-en="You can request deletion of your data through the data deletion request page:">
-                    يمكنك طلب حذف بياناتك عبر
-                    <a href="https://barzan-dawood.github.io/delete-data-sengaldoctor/delete-data-request.html" target="_blank" data-ar="صفحة طلب حذف البيانات" data-en="Data Deletion Request Page">صفحة طلب حذف البيانات</a>
-                </li>
-            </ul>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="9. التواصل والدعم" data-en="9. Contact and Support">9. التواصل والدعم</h2>
-            <ul>
-                <li data-ar="من داخل التطبيق عبر صفحة &quot;تواصل معنا&quot;." data-en="From within the application via the &quot;Contact Us&quot; page.">من داخل التطبيق عبر صفحة "تواصل معنا".</li>
-            </ul>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="10. تحديثات السياسة" data-en="10. Policy Updates">10. تحديثات السياسة</h2>
-            <p data-ar="قد نقوم بتحديث سياسة الخصوصية هذه بما يتوافق مع التغييرات التقنية أو القانونية أو التطويرية في التطبيق، وسيتم توضيح تاريخ آخر تحديث داخل النص. استمرارك في استخدام التطبيق بعد أي تعديل يعتبر موافقة على السياسة المحدثة." data-en="We may update this privacy policy to align with technical, legal, or developmental changes in the application, and the last update date will be clarified within the text. Your continued use of the application after any modification is considered acceptance of the updated policy.">
-                قد نقوم بتحديث سياسة الخصوصية هذه بما يتوافق مع التغييرات التقنية أو القانونية أو التطويرية في التطبيق، وسيتم توضيح تاريخ آخر تحديث داخل النص. استمرارك في استخدام التطبيق بعد أي تعديل يعتبر موافقة على السياسة المحدثة.
-            </p>
-            
-            <div class="divider"></div>
-            
-            <h2 data-ar="11. موافقتك" data-en="11. Your Consent">11. موافقتك</h2>
-            <p data-ar="باستخدامك للتطبيق، فأنت توافق على جمع واستخدام المعلومات كما هو موضح في هذه السياسة. إذا لم تكن موافقاً على هذه السياسة، يُرجى عدم استخدام التطبيق." data-en="By using the application, you agree to the collection and use of information as described in this policy. If you do not agree to this policy, please do not use the application.">
-                باستخدامك للتطبيق، فأنت توافق على جمع واستخدام المعلومات كما هو موضح في هذه السياسة. إذا لم تكن موافقاً على هذه السياسة، يُرجى عدم استخدام التطبيق.
-            </p>
-        </div>
-        
-        <div class="footer">
-            <p data-ar="&copy; 2026 دليل شنكال. جميع الحقوق محفوظة." data-en="&copy; 2026 Sengal Guide. All rights reserved.">&copy; 2026 دليل شنكال. جميع الحقوق محفوظة.</p>
-        </div>
-    </div>
-    
-    <script>
-        // Get saved language from localStorage or default to Arabic
-        let currentLang = localStorage.getItem('privacyPolicyLang') || 'ar';
-        
-        // Initialize language on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            switchLanguage(currentLang);
-        });
-        
-        function switchLanguage(lang) {
-            currentLang = lang;
-            localStorage.setItem('privacyPolicyLang', lang);
-            
-            // Update HTML attributes
-            document.documentElement.lang = lang;
-            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-            document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
-            
-            // Update all elements with data attributes (process children first, then parents)
-            // First, update all child elements (span, strong, etc.)
-            const childElements = document.querySelectorAll('span[data-ar], span[data-en], strong[data-ar], strong[data-en]');
-            childElements.forEach(element => {
-                const text = element.getAttribute(`data-${lang}`);
-                if (text) {
-                    element.textContent = text;
-                }
-            });
-            
-            // Then update parent elements (h1, h2, h3, p, li, etc.)
-            const parentElements = document.querySelectorAll('h1[data-ar], h1[data-en], h2[data-ar], h2[data-en], h3[data-ar], h3[data-en], p[data-ar], p[data-en], li[data-ar], li[data-en], strong[data-ar], strong[data-en]');
-            parentElements.forEach(element => {
-                // Skip if already processed as a child
-                if (element.tagName === 'SPAN' || (element.tagName === 'STRONG' && element.closest('li, p'))) {
-                    return;
-                }
-                
-                const text = element.getAttribute(`data-${lang}`);
-                if (text) {
-                    // Check if element has child elements with data attributes
-                    const hasDataChildren = element.querySelector('span[data-ar], span[data-en], strong[data-ar], strong[data-en]');
-                    
-                    // Check if element contains links (anchor tags) - save them before updating
-                    const existingLinks = element.querySelectorAll('a');
-                    const linksArray = existingLinks.length > 0 ? Array.from(existingLinks).map(link => ({
-                        href: link.getAttribute('href'),
-                        target: link.getAttribute('target'),
-                        text: link.textContent
-                    })) : [];
-                    
-                    if (hasDataChildren) {
-                        // Don't replace the whole content, children are already updated
-                        // Just update any direct text nodes if needed
-                        const textNodes = Array.from(element.childNodes).filter(node => node.nodeType === 3);
-                        if (textNodes.length > 0 && text.trim()) {
-                            // Extract text before first HTML tag
-                            const mainText = text.split(/<[^>]+>/)[0].trim();
-                            if (mainText) {
-                                textNodes[0].textContent = mainText + ' ';
-                            }
-                        }
-                    } else {
-                        // If element contains links, preserve them
-                        if (linksArray.length > 0) {
-                            // Build new HTML with text and preserved links
-                            let newHTML = text;
-                            
-                            // Add links after the text with "و" between them
-                            newHTML += ' ';
-                            linksArray.forEach((link, index) => {
-                                if (index > 0) {
-                                    newHTML += ' و ';
-                                }
-                                newHTML += `<a href="${link.href}"${link.target ? ` target="${link.target}"` : ''}>${link.text}</a>`;
-                            });
-                            element.innerHTML = newHTML;
-                        } else {
-                            // Simple text replacement for elements without links
-                            element.textContent = text;
-                        }
-                    }
-                }
-            });
-            
-            // Update language buttons
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                if (btn.getAttribute('data-lang') === lang) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-        }
-    </script>
+<body style="font-family: Arial; line-height:1.8; padding:20px; max-width:900px; margin:auto;">
+
+<h1>🔒 سياسة الخصوصية - دليل شنكال</h1>
+
+<p><strong>آخر تحديث:</strong> 14 فبراير 2026</p>
+
+<p>
+نحن في تطبيق <strong>دليل شنكال</strong> نحترم خصوصيتك ونلتزم بحماية بياناتك.
+</p>
+
+<hr>
+
+<h2>1. نظرة عامة</h2>
+<p>
+التطبيق هو دليل معلوماتي يعرض خدمات محلية (أطباء، مستشفيات، مطاعم...).
+لا يتطلب إنشاء حساب.
+</p>
+
+<hr>
+
+<h2>إخلاء مسؤولية طبية</h2>
+<p>
+التطبيق لا يقدم استشارات طبية، والمعلومات لأغراض إرشادية فقط.
+</p>
+
+<hr>
+
+<h2>2. البيانات التي لا نجمعها</h2>
+<ul>
+<li>لا نجمع بيانات تسجيل الدخول</li>
+<li>لا نجمع الموقع الجغرافي</li>
+<li>لا نستخدم الإعلانات</li>
+<li>لا نبيع البيانات</li>
+</ul>
+
+<hr>
+
+<h2>3. الأذونات</h2>
+<ul>
+<li>الإنترنت: لجلب البيانات</li>
+<li>الإشعارات: للتحديثات</li>
+<li>الاتصال: للاتصال بالخدمات</li>
+<li>الموقع: غير مستخدم حالياً</li>
+</ul>
+
+<hr>
+
+<h2>4. البيانات التي يتم جمعها</h2>
+
+<h3>بيانات تلقائية</h3>
+<ul>
+<li>نوع الجهاز</li>
+<li>نظام التشغيل</li>
+<li>تقارير الأعطال</li>
+<li>رمز الإشعارات</li>
+</ul>
+
+<h3>بيانات محلية</h3>
+<ul>
+<li>إعدادات المستخدم</li>
+<li>الكاش</li>
+</ul>
+
+<h3>بيانات يرسلها المستخدم</h3>
+<ul>
+<li>الاسم</li>
+<li>البريد الإلكتروني</li>
+<li>رقم الهاتف</li>
+</ul>
+
+<hr>
+
+<h2>5. خدمات الطرف الثالث</h2>
+<p>
+نستخدم خدمات Google Firebase (Analytics, Crashlytics, Cloud Messaging).
+قد يتم نقل بعض البيانات التقنية (مثل معلومات الجهاز ومعرّفات الإشعارات)
+إلى خوادم Google لتحليل الأداء وتحسين التطبيق.
+</p>
+
+<p>
+<a href="https://policies.google.com/privacy">سياسة Google</a>
+</p>
+
+<hr>
+
+<h2>6. استخدام البيانات</h2>
+<ul>
+<li>تحسين التطبيق</li>
+<li>إصلاح الأخطاء</li>
+<li>إرسال إشعارات</li>
+</ul>
+
+<hr>
+
+<h2>7. حماية البيانات</h2>
+<ul>
+<li>نستخدم HTTPS</li>
+<li>لا نبيع البيانات</li>
+</ul>
+
+<hr>
+
+<h2>8. مدة الاحتفاظ بالبيانات</h2>
+<p>
+نحتفظ بالبيانات لفترة محدودة فقط لتحسين التطبيق،
+ثم يتم حذفها أو جعلها مجهولة.
+</p>
+
+<hr>
+
+<h2>9. حقوقك</h2>
+<ul>
+<li>يمكنك حذف التطبيق لحذف البيانات</li>
+<li>يمكنك إيقاف الإشعارات</li>
+</ul>
+
+<hr>
+
+<h2>10. التواصل</h2>
+<ul>
+<li>
+البريد الإلكتروني:
+<a href="mailto:info@barzandawood.com">info@barzandawood.com</a>
+</li>
+</ul>
+
+<hr>
+
+<h2>11. التحديثات</h2>
+<p>
+قد نقوم بتحديث هذه السياسة عند الحاجة.
+</p>
+
+<hr>
+
+<h2>12. الموافقة</h2>
+<p>
+باستخدامك للتطبيق، فأنت توافق على هذه السياسة.
+</p>
+
 </body>
 </html>
