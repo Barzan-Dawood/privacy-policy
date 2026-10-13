@@ -270,7 +270,7 @@
                 <li data-ar="يمكنك إنشاء حساب أو تسجيل الدخول من إعدادات دليل شنكال، أو من متاجر شنكال — النتيجة حساب واحد بنفس البريد والبيانات." data-en="You can create an account or sign in from Sengal Guide Settings, or from Shingal Stores — it is the same account with the same email and profile data.">يمكنك إنشاء حساب أو تسجيل الدخول من إعدادات دليل شنكال، أو من متاجر شنكال — النتيجة حساب واحد بنفس البريد والبيانات.</li>
                 <li data-ar="عند التسجيل أو تسجيل الدخول قد نعالج: الاسم، البريد الإلكتروني، رقم الهاتف، وكلمة المرور (تُخزَّن بشكل آمن ولا تُعرض كنص واضح)، وصورة الحساب إن أضفتها." data-en="When you register or sign in we may process: name, email, phone number, password (stored securely and never shown in plain text), and profile photo if you add one.">عند التسجيل أو تسجيل الدخول قد نعالج: الاسم، البريد الإلكتروني، رقم الهاتف، وكلمة المرور (تُخزَّن بشكل آمن ولا تُعرض كنص واضح)، وصورة الحساب إن أضفتها.</li>
                 <li data-ar="يمكنك تعديل بياناتك لاحقاً من إعدادات الحساب." data-en="You can later edit your details from Account settings.">يمكنك تعديل بياناتك لاحقاً من إعدادات الحساب.</li>
-                <li data-ar="يمكنك حذف الحساب نهائياً من داخل التطبيق: الإعدادات ← إعدادات الحساب ← حذف الحساب. هذا يحذف الحساب والبيانات المرتبطة به من السيرفر. صفحة مساعدة على الويب: delete-data-request.html (للشرح أو طلب الحذف بالبريد إن تعذّر من التطبيق)." data-en="You can permanently delete the account in the app: Settings → Account settings → Delete account. This removes the account and related data from the server. Help web page: delete-data-request.html (for steps or email request if in-app deletion is not possible).">يمكنك حذف الحساب نهائياً من داخل التطبيق: الإعدادات ← إعدادات الحساب ← حذف الحساب. هذا يحذف الحساب والبيانات المرتبطة به من السيرفر. صفحة مساعدة على الويب: delete-data-request.html (للشرح أو طلب الحذف بالبريد إن تعذّر من التطبيق).</li>
+                <li data-ar="يمكنك حذف الحساب نهائياً من داخل التطبيق: الإعدادات ← إعدادات الحساب ← حذف الحساب. هذا يحذف الحساب والبيانات المرتبطة به من السيرفر." data-en="You can permanently delete the account in the app: Settings → Account settings → Delete account. This removes the account and related data from the server.">يمكنك حذف الحساب نهائياً من داخل التطبيق: الإعدادات ← إعدادات الحساب ← حذف الحساب. هذا يحذف الحساب والبيانات المرتبطة به من السيرفر.</li>
                 <li data-ar="هذا الحساب شخصي للتطبيق؛ إعدادات المتجر (إن فتحت متجراً) منفصلة عن بيانات حسابك الشخصي." data-en="This is your personal app account; store settings (if you open a store) are separate from your personal account data.">هذا الحساب شخصي للتطبيق؛ إعدادات المتجر (إن فتحت متجراً) منفصلة عن بيانات حسابك الشخصي.</li>
             </ul>
             
@@ -419,7 +419,7 @@
                 <li data-ar="الطريقة الأساسية لحذف الحساب: من داخل التطبيق — الإعدادات ← إعدادات الحساب ← حذف الحساب." data-en="Primary way to delete your account: in the app — Settings → Account settings → Delete account.">الطريقة الأساسية لحذف الحساب: من داخل التطبيق — الإعدادات ← إعدادات الحساب ← حذف الحساب.</li>
                 <li data-ar="صفحة ويب مساعدة (لشرح الخطوات أو طلب الحذف بالبريد إن تعذّر من التطبيق):" data-en="Help web page (steps explanation, or email request if in-app deletion is not possible):">
                     صفحة ويب مساعدة (شرح الخطوات أو طلب الحذف بالبريد إن تعذّر من التطبيق):
-                    <a href="https://barzan-dawood.github.io/delete-data-sengal_guide/delete-data-request.html" target="_blank">delete-data-request.html</a>
+                    <a href="https://barzan-dawood.github.io/delete-data-sengal_guide/delete-data-request.html" target="_blank" data-ar="طلب حذف الحساب" data-en="Request account deletion">طلب حذف الحساب</a>
                 </li>
                 <li data-ar="يمكنك مراجعة سياسات Google و Firebase من الروابط أعلاه." data-en="You can review Google and Firebase policies via the links above.">يمكنك مراجعة سياسات Google و Firebase من الروابط أعلاه.</li>
                 <li data-ar="يمكنك التواصل معنا بخصوص أي استفسار عن الخصوصية." data-en="You can contact us regarding any privacy inquiry.">يمكنك التواصل معنا بخصوص أي استفسار عن الخصوصية.</li>
@@ -499,7 +499,7 @@
                     const linksArray = existingLinks.length > 0 ? Array.from(existingLinks).map(link => ({
                         href: link.getAttribute('href'),
                         target: link.getAttribute('target'),
-                        text: link.textContent
+                        text: link.getAttribute(`data-${lang}`) || link.textContent
                     })) : [];
                     
                     if (hasDataChildren) {
